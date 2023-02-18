@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saim's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1b0dc4d1d6.js" crossorigin="anonymous"></script>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+<!----------------------------------HEADER SECTION---------------------------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo">
+                
+                <ul id="sidemenu">
+                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>      
+                        <li><a href="#header">HOME</a></li>   
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#contact">CONTACT</a></li> 
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+                <div class="header-text">
+                  <p>Full Stack Web-Developer</p>
+                  <h1>Hi, Im <span>Saim</span><br>Ali From Pakistan</h1>
+                </div>        
+        </div>
+    </div>
+<!----------------------------------HEADER SECTION END---------------------------------->
+
+
+<!-----------------------------------ABOUT SECTION---------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p>Hello, I'm Saim Ali. I am a professional website developer. My specialty is creating websites based on MERN stack.I'm a creative designer and full-stack developer with modern elegance tests. From design to development, simplify all your professional needs in one place. I've been doing this job for quite some time now and I'm going to give you a great service in a simple and innovative way.</p>
+                       
+                       <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                       </div>
+
+                      <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Website-Developer</span><br>(Developing & Designing Websites)<br><br>As a Website Developer, I have mastered the most important programming and markup languages like HTML, CSS, and JavaScript for the frontend and PHP or Node. js for the backend.</li>
+                            
+                            
+                            <li><span>WordPress-Designer</span><br>(WordPress Websites Creation)<br><br>As a WordPress web designer, I have mastered the most important programming and markup languages ​​for web design, including HTML, CSS, JavaScript, PHP, and SQL. This technical knowledge is the foundation of everything a WordPress developer does.</li>
+                            
+
+                            <li><span>Social Media Content Creator</span><br>(Create & Design Social Media Posts)<br><br>As a Social Media Managers, I am ordinarily responsible for developing strategies to increase followers, creating and overseeing social campaigns, producing content, reviewing analytics, and communicating with key stakeholders in a company</li>
+                        </ul>
+                      </div>
+
+                      <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022</span><br>Internship at Mount Sol as:(<i>Full Stack Developer</i>)</li>
+                            <li><span>2021 - 2022</span><br>Internship at Code Up Now as:(<i>Website Developer</i>)</li>
+                        </ul>
+                      </div>
+
+                      <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018-2022</span><br>Becholers in Computer Science [BSCS] <br> From: (<i>Lahore Garrison University)</i></li>
+                            <li><span>2015-2017</span><br>Intermediate in Computer Science [ICS]<br> From: (<i>Punjab group of Colleges)</i>)</li>
+                            <li><span>2014-2015</span><br>Marticulation <br> From: (<i>Allied School</i>)</li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>      
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+           tablink.classList.remove("active-link");
+         }   
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+         }  
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<!------------------------------------ABOUT SECTION END---------------------------------->
+
+
+<!-------------------------------------SERVICES SECTION---------------------------------->
+ 
+     <div id="services">
+         <div class="about-col-2">          
+          <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                 <div>
+                    <i class="fa-solid fa-code"></i>
+                     <h2>Web Design & Development</h2>
+                     <p>Creating and maintaining websites. I am also responsible for the site's technical aspects, such as its performance and capacity, which are measures of a website's speed and how much traffic the<span id="dots1">...</span><span id="more1"> site can handle. In addition, providing custom designs and provide responsive websites. Also, providing you with Back-End functionality and logically softwares.<br><br> My Expertise areas: [➤E-Commerce Websites  ➤Business Websites  ➤Travel Websites  ➤Event Websites ➤Portfolio Websites ➤Personal Websites ➤Non-Profit Websites ➤Informational Websites ➤Blog Websites]</span></p>
+                     <button onclick="myFunction1()" id="myBtn1">Read More</button><br>
+                 </div>
+                 <div>
+                     <i class="fa-sharp fa-solid fa-crop"></i>
+                     <h2>WordPress Design & Creation</h2>
+                     <p>I'm a creative designer and full-stack developer with modern elegance tests on WordPress. From design to development, simplify all your professional<span id="dots2">...</span> <span id="more2">needs in one place. <br><br> My Expertise areas: [➤Professional Website Design ➤WordPress themes customization ➤Wocommerce Website Design ➤Design Blog or Newspaper Websites ➤WordPress Speed Up ➤WordPress SEO ➤Facebook Pixel ➤Mailchimp Email Template ➤Landing Page Design ➤Any forms in WordPress ➤Elementor PRO ➤Visual Builder/Visual Composer ➤Yoast SEO/Rank Math]</span></p><br>
+                     <button onclick="myFunction2()" id="myBtn2">Read More</button>
+                 </div>
+                 <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Social Media Managment</h2>
+                    <p>Our years of social media focus have allowed us to work with a wide variety of companies around the world to find the best strategies to pursue online. I have a great team of graphic designers, social media managers,<span id="dots3">...</span><SEO id="more3"> SEO experts and website developers. <br><br>Platforms where I serverd: [➤Facebook ➤Instagram ➤LinkedIn ➤Pinterest ➤Twitter]<br><br>Marketing and Content Creation Services:  [   ➤Page setup (add bio, website, logo, etc.)
+                        ➤Page optimization
+                        ➤Create engaging posts & a product post
+                        ➤Creation of Service Articles
+                        ➤Competitive Analysis
+                        ➤Create a new strategy
+                        ➤Create the most appropriate captions for your post
+                        ➤Increase brand awareness
+                        ➤Enter your personal preferences
+                        ➤Use paid software to get the best and most popular #tags for Instagram and other sites]</span></p>
+                        <button onclick="myFunction3()" id="myBtn3">Read More</button><br>
+                </div>
+            </div>
+         </div>
+     </div>    
+<!-------------------------------------SERVICES SECTION END---------------------------------->
+
+
+<!-------------------------------------WORK SECTION------------------------------------->
+         <div id="portfolio">
+             <div class="container">
+                  <h1 class="sub-title">My Work</h1>
+                     <div class="work-list">
+                          <div class="work">
+                             <img src="images/work-1.jpg">
+                             <div class="layer">
+                                <h3>Website Development</h3>
+                                <p>In this section, you can see highlights of my <i>Projects</i> and <i>Websites</i></p>
+                                <a href="websites.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                             </div>
+                          </div>
+                          <div class="work">
+                             <img src="images/work-2.jpg">
+                             <div class="layer">
+                                <h3>WordPress Creation</h3>
+                                <p>In this section, you can see highlights of my <i>Projects</i> and <i>Websites</i></p>
+                                <a href="wordpress.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                             </div>
+                          </div>
+                          <div class="work">
+                             <img src="images/work-3.jpg">
+                             <div class="layer">
+                                <h3>Social Media Managment</h3>
+                                <p>In this section, you can see highlights of my <i>Posts</i></p>
+                                <a href="ssm.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                             </div>
+                          </div>
+
+                          <div class="work">
+                            <img src="images/writing.jpg">
+                            <div class="layer">
+                               <h3>Content Writing</h3>
+                               <p>In this section, you can see highlights of my <i>Content Writing</i> & <i>Blogs</i></p>
+                               <a href="Writings.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                         </div>
+
+                     </div> 
+                     <a href="WD.html" class="btn">Projects</a>
+             </div>         
+         </div>
+<!-------------------------------WORK SECTION END---------------------------------->
+
+<!-------------------------------CONTACT SECTION---------------------------------->
+                     <div id="contact">
+                        <div class="container">
+                            <div class="row">
+                                <div class="contact-left">
+                                     <h1 class="sub-title">Contact us</h1>
+                                     <p><i class="fa-solid fa-paper-plane"></i> saim14.ali2001@gmail.com</p>
+                                     <p><i class="fa-solid fa-phone"></i> 0326-5300933</p>
+                                     <div class="social-icons">
+                                        <a href="https://www.facebook.com/profile.php?id=100029250650960"><i class="fa-brands fa-facebook"></i></a>
+                                        
+                                        <a href="https://www.instagram.com/saim_ali_xhah/"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/saim-ali-768806246"><i class="fa-brands fa-linkedin"></i></a>
+                                        <a href="https://www.fiverr.com/s2/a57be48f3c"><i class="fa-solid fa-pen"></i></a>
+                                        <a href="https://github.com/Saim-Ali-69"><i class="fa-brands fa-square-github"></i></a>
+                                        <a href="https://www.blogger.com/profile/09373429305297405172"><i class="fa-brands fa-blogger"></i></a>
+                                     </div>  
+                                 <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>                             
+                                </div>
+                                <div class="contact-right">
+                                    <form name="submit-to-google-sheet">
+                                        <input type="text" name="Name" placeholder="Your Name" required>
+                                        <input type="email" name="Email" placeholder="Your Email" required>
+                                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                                        <button type="submit" class="btn btn2">Submit</button>
+                                    </form>
+                                    <span id="msg"></span>
+                                 </div>   
+                            </div>
+                        </div>
+                     </div>
+                     
+<!-------------------------------CONTACT SECTION END---------------------------------->
+
+<!-------------------------------COPYRIGHT SECTION ---------------------------------->
+                     <div class="copyright">
+                      <div class="container my-4">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Time Is: <span id="time"></span></h1>
+                        </div>
+                      </div>
+                        <p>[Copyright <i class="fa-solid fa-copyright"></i> Made by Saim Ali]</p>
+                        <br><br><br>
+                        <p>Website Include All <br> Projects & Work Highlights</p>
+                     </div>
+
+<!-------------------------------COPYRIGHT SECTION END---------------------------------->
+
+
+<!-------------------------------SCRIPT SECTION---------------------------------->
+<script> 
+ var sidemenu = document.getElementById("sidemenu");
+ function openmenu(){
+    sidemenu.style.right = "0";
+ }
+ function closemenu(){
+    sidemenu.style.right = "-200px";
+ }
+</script>
+
+<script>
+const scriptURL ='https://script.google.com/macros/s/AKfycbyiL2HaVNafSUkLO4Y4zBZ7dkXO8aXqKb1xDGqseEsh73Hju8ej4kLOj22W1HTvTlsv/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script>
+    function myFunction1() {
+      var dots1 = document.getElementById("dots1");
+      var moreText1 = document.getElementById("more1");
+      var btnText1 = document.getElementById("myBtn1");
+    
+      if (dots1.style.display === "none") {
+        dots1.style.display = "inline";
+        btnText1.innerHTML = "Read more"; 
+        moreText1.style.display = "none";
+      } else {
+        dots1.style.display = "none";
+        btnText1.innerHTML = "Read less"; 
+        moreText1.style.display = "inline";
+      }
+    }
+    </script>
+   
+   <script>
+        function myFunction2() {
+          var dots2 = document.getElementById("dots2");
+          var moreText2 = document.getElementById("more2");
+          var btnText2 = document.getElementById("myBtn2");
+        
+          if (dots2.style.display === "none") {
+            dots2.style.display = "inline";
+            btnText2.innerHTML = "Read more"; 
+            moreText2.style.display = "none";
+          } else {
+            dots2.style.display = "none";
+            btnText2.innerHTML = "Read less"; 
+            moreText2.style.display = "inline";
+          }
+        }
+        </script>
+        <script>
+            function myFunction3() {
+              var dots3 = document.getElementById("dots3");
+              var moreText3= document.getElementById("more3");
+              var btnText3 = document.getElementById("myBtn3");
+            
+              if (dots3.style.display === "none") {
+                dots3.style.display = "inline";
+                btnText3.innerHTML = "Read more"; 
+                moreText3.style.display = "none";
+              } else {
+                dots3.style.display = "none";
+                btnText3.innerHTML = "Read less"; 
+                moreText3.style.display = "inline";
+              }
+            }
+            </script>
+
+<!-------------------------------CLOCK SECTION SCRIPT---------------------------------->
+
+             <script>
+                let a;
+                let date;
+                let time;
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                setInterval(() => {
+                a = new Date(); 
+                date = a.toLocaleDateString(undefined, options);
+                time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+                document.getElementById('time').innerHTML = time + "<br>on " + date;
+                }, 1000);
+             </script>
+
+             <!-- Optional JavaScript -->
+             <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+           <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+           integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+           crossorigin="anonymous"></script>
+           <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+           integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+           crossorigin="anonymous"></script>
+           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+           integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+           crossorigin="anonymous"></script>
+
+<!-------------------------------CLOCK SECTION SCRIPT END---------------------------------->
+  
+<!-------------------------------SCRIPT SECTION END---------------------------------->
+
+</body>
+</html>
